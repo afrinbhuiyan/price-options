@@ -2,6 +2,8 @@
 import NavBar from './components/NavBar/NavBar'
 import './App.css'
 import PriceOptions from './components/PriceOptions/PriceOptions'
+import LineCharts from './components/LineCharts/LineCharts'
+import Phones from './components/Phones/Phones'
 
 function App() {
 
@@ -11,8 +13,8 @@ function App() {
       <h1 className='text-4xl text-center font-bold py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white'>Vite + React</h1>
       <NavBar></NavBar>
       <PriceOptions></PriceOptions>
-
-
+      <LineCharts></LineCharts>
+      <Phones></Phones>
 
 
 
