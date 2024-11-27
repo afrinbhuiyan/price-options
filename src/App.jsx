@@ -1,6 +1,7 @@
 // import DaisyNav from './components/DaisyNav/DaisyNav'
 import NavBar from './components/NavBar/NavBar'
 import './App.css'
+import PriceOptions from './components/PriceOptions/PriceOptions'
 
 function App() {
 
@@ -9,11 +10,16 @@ function App() {
     <div>
       <h1 className='text-4xl text-center font-bold py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white'>Vite + React</h1>
       <NavBar></NavBar>
- 
+      <PriceOptions></PriceOptions>
 
 
-      {/* <DaisyNav></DaisyNav>
-      <div className='mx-32 mt-10 '>
+
+
+
+
+
+          {/* <DaisyNav></DaisyNav> */}
+      {/* <div className='mx-32 mt-10 '>
         <div className="hero bg-gradient-to-r from-cyan-500 to-blue-500 py-20 rounded-3xl">
           <div className="hero-content flex-col lg:flex-row-reverse">
             <img
