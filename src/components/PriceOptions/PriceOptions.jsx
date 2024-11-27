@@ -1,5 +1,5 @@
 import PriceOption from "../PriceOption/PriceOption";
-
+import { AiFillOpenAI } from "react-icons/ai";
 const PriceOptions = () => {
 
     const PriceOptions = [
@@ -69,11 +69,15 @@ const PriceOptions = () => {
       
 
     return (
-        <div>
-            <h1 className="text-5xl">Best Prices in the town</h1>
+        <div className="mx-5 lg:mx-40 lg:mt-10">
+            <h1 className="flex items-center text-2xl lg:text-5xl font-bold my-10"> 
+            <span className=" text-4xl lg:text-7xl text-[#ec17cf7e] " ><AiFillOpenAI /></span>
+            Best <span className="flex text-[#bf8aebb4] mx-2">Prices</span> in the town</h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {
                 PriceOptions.map(option => <PriceOption key={option.id} option={option} > </PriceOption> )
             }
+            </div>
         </div>
     );
 };
